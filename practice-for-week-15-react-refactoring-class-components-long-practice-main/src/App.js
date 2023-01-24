@@ -50,7 +50,7 @@ class OldApp extends React.Component {
 function App() {
   const[showClock, setShowClock] = useState(true)
   
-  const toggleClock = setShowClock(notShowClock => (!notShowClock))
+  const toggleClock = () => setShowClock(!showClock)
 
 
   return(
@@ -67,3 +67,8 @@ function App() {
 }
 
 export default App;
+
+
+
+
+// const props ={ folders: folders, wilson: 123}
